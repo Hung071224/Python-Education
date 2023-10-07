@@ -29,7 +29,7 @@ name= "micheal"
 birthday= "01/01/2001"
 
 
-print(f"name \t: \t{name}. \nbirthday \t: \t{birthday}")
+print(f"name \t\t: \t{name}. \nbirthday \t: \t{birthday}")
 
 
 """
