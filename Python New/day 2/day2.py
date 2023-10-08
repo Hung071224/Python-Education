@@ -204,7 +204,6 @@ print (f"số nhỏ nhất là: {min}")
 
 month = int(input("what is the month?"))
 year = int(input("what is the year?"))
-day = 31
 if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
     print ("this month have 31 days")
 else:
