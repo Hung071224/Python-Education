@@ -77,6 +77,7 @@ print (f"xếp loại học sinh là: {xếp_loại}")
 
 
 
+"""
 # Nhập số nguyên dương n
 n = int(input("Nhập số nguyên dương n: "))
 
@@ -114,7 +115,7 @@ if n > 0:
 else:
     # In thông báo lỗi nếu n không thỏa mãn điều kiện
     print("n phải là số nguyên dương!")
-
+"""
 
 
 
@@ -126,12 +127,35 @@ else:
 
 #bài 4
 
+"""
+
+# Nhập số nguyên dương N
+N = int(input("Nhập số nguyên dương N: "))
+
+# Kiểm tra điều kiện N > 0
+if N > 0:
+    # Khởi tạo biến đếm số dấu * trên mỗi hàng
+    count = 1
+
+    # Tính khoảng cách giữa dấu * đầu tiên và cuối cùng trên hàng cuối cùng
+    distance = 2 * N - 1
+
+    # In tam giác cân bằng vòng lặp for
+    for i in range(1, N + 1):
+        # In khoảng trắng trước dấu * đầu tiên
+        print(" " * ((distance - count) // 2), end="")
+
+        # In dấu * trên mỗi hàng
+        print("*" * count)
+
+        # Tăng biến đếm lên 2
+        count += 2
+else:
+    # In thông báo lỗi nếu N không thỏa mãn điều kiện
+    print("N phải là số nguyên dương lớn hơn 0!")
 
 
-
-
-
-
+"""
 
 
 
