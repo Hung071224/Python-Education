@@ -127,7 +127,7 @@ else:
 
 #bài 4
 
-"""
+
 
 # Nhập số nguyên dương N
 N = int(input("Nhập số nguyên dương N: "))
@@ -155,7 +155,7 @@ else:
     print("N phải là số nguyên dương lớn hơn 0!")
 
 
-"""
+
 
 
 
