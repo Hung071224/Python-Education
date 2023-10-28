@@ -75,11 +75,60 @@ print(f"Số lượng cán bộ béo phì của khoa CNTT là {obese_count}")
 
 
 
+#bài 3
 
 
 
 
 
+n = int(input("Nhập số hàng của ma trận: "))
+m = int(input("Nhập số cột của ma trận: "))
+
+A = []
+B = []
+
+print("Nhập các phần tử của ma trận A:")
+for i in range(n):
+  row = []
+  for j in range(m):
+    element = float(input(f"A[{i}][{j}]: "))
+    row.append(element)
+  A.append(row)
+
+print("Nhập các phần tử của ma trận B:")
+for i in range(n):
+  row = []
+  for j in range(m):
+    element = float(input(f"B[{i}][{j}]: "))
+    row.append(element)
+  B.append(row)
+
+print("Ma trận A là:")
+for i in range(n):
+  for j in range(m):
+    print("%.2f" % A[i][j], end=" ")
+  print()
+
+print("Ma trận B là:")
+for i in range(n):
+  for j in range(m):
+    print("%.2f" % B[i][j], end=" ")
+  print()
+
+C = []
+
+for i in range(n):
+  row = []
+  for j in range(m):
+    element = A[i][j] + B[i][j]
+    row.append(element)
+  C.append(row)
+
+print("Ma trận C = A + B là:")
+for i in range(n):
+  for j in range(m):
+    print("%.2f" % C[i][j], end=" ")
+  print()
 
 
 
