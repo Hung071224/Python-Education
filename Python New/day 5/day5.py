@@ -1,7 +1,7 @@
 #bai 1
 
 
-
+"""
 
 n = int(input("Nhập vào số lượng loại cá: "))
 fish_list = []
@@ -26,13 +26,52 @@ print(f"Tổng giá các loại cá là {total_price}")
 
 
 
+"""
 
 
 #Bài 2
 
 
 
+"""
 
+
+
+n = int(input("Nhập vào số lượng cán bộ của khoa CNTT: "))
+
+staff_list = []
+
+obese_count = 0
+
+for i in range(n):
+    height = float(input(f"Nhập vào chiều cao của cán bộ thứ {i+1} (m): "))
+    weight = float(input(f"Nhập vào cân nặng của cán bộ thứ {i+1} (kg): "))
+    bmi = weight / (height ** 2)
+    staff_list.append((height, weight, bmi))
+    if bmi > 30:
+        obese_count += 1
+
+
+print("Danh sách chiều cao, cân nặng và BMI của các cán bộ: ")
+print("Chiều cao (m) | Cân nặng (kg) | BMI | Đánh giá")
+for staff in staff_list:
+    height, weight, bmi = staff
+    result = f"{height:.2f} | {weight:.2f} | {bmi:.2f} | "
+    if bmi < 18.5:
+        result += "Gầy"
+    elif bmi < 25:
+        result += "Bình thường"
+    elif bmi < 30:
+        result += "Thừa cân"
+    else:
+        result += "Béo phì"
+    print(result)
+
+print(f"Số lượng cán bộ béo phì của khoa CNTT là {obese_count}")
+
+
+
+"""
 
 
 
