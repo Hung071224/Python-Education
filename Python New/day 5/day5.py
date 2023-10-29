@@ -124,11 +124,11 @@ for i in range(n):
     row.append(element)
   C.append(row)
 
-print("Ma trận C = A + B là:")
+print("Ma trận tổng là:")
 for i in range(n):
   for j in range(m):
     print("%.2f" % C[i][j], end=" ")
-  print()
+    print()
 
 
 
