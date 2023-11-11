@@ -113,7 +113,7 @@ for i in range(n):
         edible.append(i)
 print("các loại nấm mà người dân có thể hái về ăn được là: ")
 for i in edible:
-    print(f"Loại nấm thyws {i+1}: mức dinh dưỡng là {nutrition[i]}, lượng độc tố là {toxin[i]}")
+    print(f"Loại nấm thứ {i+1}: mức dinh dưỡng là {nutrition[i]}, lượng độc tố là {toxin[i]}")
 
 
 max_toxin = []
