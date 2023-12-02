@@ -65,7 +65,8 @@ def isprimenumber(n):
         if n % i == 0:
             return False
     return True
-
+for i in range(1, 11):
+    print(i, "is a prime number: ", isprimenumber(i))
 
 
 
