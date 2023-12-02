@@ -93,8 +93,41 @@ for num in my_list:
 """
 
 
+def nhap_bon_so(): 
+    bon_so = []
+    for i in range(4):
+        so = float(input("nhập số thứ " + str(i+1) + ":"))
+        bon_so.append(so)
+    return bon_so
 
 
+def tinh_trung_binh_cong(bon_so):
+    tong = sum(bon_so)
+    trung_binh_cong = tong / 4
+    return trung_binh_cong    
+
+
+def tim_so_lon_nhat(bon_so):
+    so_lon_nhat = bon_so[0]
+    for so in bon_so[1:]:
+        if so > so_lon_nhat:
+            so_lon_nhat = so
+    return so_lon_nhat
+
+def tim_so_nho_nhat(bon_so):
+    so_nho_nhat = bon_so[0]
+    for so in bon_so[1:]:
+        if so < so_nho_nhat:
+            so_nho_nhat = so
+        return so_nho_nhat
+bon_so = nhap_bon_so()
+trung_binh_cong = tinh_trung_binh_cong(bon_so)
+so_lon_nhat = tim_so_lon_nhat(bon_so)
+so_nho_nhat = tim_so_nho_nhat(bon_so)
+print ("Bốn số bạn đã nhập là: ", bon_so)    
+print("Trung bình cộng của bốn số là: ", trung_binh_cong)
+print("Số lớn nhất trong bốn sô là: ", so_lon_nhat)
+print("Số nhỏ nhất trong bốn số là: ", so_nho_nhat)
 
 
 
