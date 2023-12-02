@@ -54,6 +54,8 @@ def phuong_trinh_hai_nghiem(a, b, delta):
 
 #yêu cầu 1
 
+"""
+
 def isprimenumber(n):
     if n < 2:
         return False
@@ -65,24 +67,30 @@ def isprimenumber(n):
         if n % i == 0:
             return False
     return True
+    
 """
 
+"""
 for i in range(1, 11):
     print(i, "is a prime number: ", isprimenumber(i))
     
+"""
+
+
 """
 import random
 my_list = []
 for i in range(10):
     num = random.randint(1, 100)
     my_list.append(num)
+count = 0
 print ("mylist: ", my_list)
 for num in my_list:
     if isprimenumber(num):
         count +=1
     print("there are ", count, "prime numbers in my list")
 
-
+"""
 
 
 
