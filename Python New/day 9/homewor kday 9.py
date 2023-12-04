@@ -124,7 +124,58 @@ print(f"Time right now: {now.strftime('%H:%M:%S')}")
 
 
 
-
+def nam_nhuan(nam):
+    if (nam % 4 ==0 and nam %100 != 0) or (nam % 400 ==0):
+        return True
+    else: 
+        return False
+def so_ngay(thang, nam):
+    if thang in [1, 3, 5, 7, 8, 10,12]:
+        return 31
+    elif thang ==2:
+        if nam_nhuan(nam):
+            return 29
+        else:
+            return 28
+    else:
+        return 30
+def ngay_truoc_sau(ngay, thang, nam):
+    if nam < 1 or thang < 1 or thang > 12 or ngay < 1 or ngay > so_ngay(thang, nam):
+        print("Ngày, tháng, năm không hợp lệ!")
+        return
+    if ngay ==1:
+        if thang == 1:
+            ngay_truoc = 31
+            thang_truoc = 12
+            nam_truoc = nam - 1
+        else: 
+            ngay_truoc = so_ngay(thang - 1, nam)
+            thang_truoc = thang - 1
+            nam_truoc = nam
+    else:
+        ngay_truoc = ngay -1
+        thang_truoc = thang
+        nam_truoc = nam
+    if ngay == so_ngay(thang, nam):
+        if thang ==12:
+            ngay_sau = 1
+            thang_sau = 1
+            nam_sau = nam + 1
+        else:
+            ngay_sau = 1
+            thang_sau = thang +1
+            nam_sau = nam
+    else:
+        ngay_sau = ngay +1
+        thang_sau = thang 
+        nam_sau = nam
+    print(f"Trước đó là{ngay_truoc:02d}/{thang_truoc:02d}/{nam_truoc:04d}")
+    print(f"Sau đó là {ngay_sau:02d}/{thang_sau:02d}/{nam_sau:04d}")
+ngay = int(input("Nhập ngày: "))
+thang = int(input("nhập tháng: "))
+nam = int(input("nhấp năm: "))
+ngay_truoc_sau(ngay, thang, nam)
+            
 
 
 
