@@ -96,15 +96,11 @@ print(f"Giá trị của biểu thức 1!/1 + 2!/2 + .... + n!/n là: {sum}")
 #chưa sửa 
 """
 
-
 from datetime import datetime
 now = datetime.now()
 print(now)
-# 2023-12-04 20:26:04.000000
 print(now.strftime('%Y/%m/%d'))
-# 2023/12/04
 print(now.strftime('%H:%M:%S %Y-%m-%d'))
-# 20:26:04 2023-12-04
 
 """
 
@@ -114,9 +110,9 @@ print(now.strftime('%H:%M:%S %Y-%m-%d'))
 from datetime import datetime
 now = datetime.now()
 print(f"Today is {now.strftime('%d/%m/%Y')}")
-# Today is 04/12/2023
+
 print(f"Time right now: {now.strftime('%H:%M:%S')}")
-# Time right now: 20:26:04
+
 
 """
 
