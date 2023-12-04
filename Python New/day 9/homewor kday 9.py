@@ -105,6 +105,7 @@ print(now.strftime('%H:%M:%S %Y-%m-%d'))
 """
 
 #sửa
+
 """
 
 from datetime import datetime
@@ -119,7 +120,7 @@ print(f"Time right now: {now.strftime('%H:%M:%S')}")
 
 
 
-
+#bài nâng cao " ^ "
 
 
 

@@ -93,6 +93,8 @@ for num in my_list:
 """
 
 
+
+"""
 def nhap_bon_so(): 
     bon_so = []
     for i in range(4):
@@ -130,8 +132,7 @@ print("Số lớn nhất trong bốn sô là: ", so_lon_nhat)
 print("Số nhỏ nhất trong bốn số là: ", so_nho_nhat)
 
 
-
-
+"""
 
 
 
