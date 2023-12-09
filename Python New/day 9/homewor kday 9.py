@@ -120,7 +120,7 @@ print(f"Time right now: {now.strftime('%H:%M:%S')}")
 
 
 
-#bài nâng cao " ^ "
+#bài nâng cao  (." ^ ".)
 
 
 
