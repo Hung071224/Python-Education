@@ -93,7 +93,7 @@ print(f"Giá trị của biểu thức 1!/1 + 2!/2 + .... + n!/n là: {sum}")
 #bài 5
 
 
-#chưa sửa 
+#đề bài
 """
 
 from datetime import datetime
