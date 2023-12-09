@@ -1,6 +1,6 @@
 
 
-
+"""
 
 def fibonacci(n):
     if n <= 2:
@@ -10,7 +10,7 @@ def fibonacci(n):
 n = int(input("enter a positive integer: "))
 print(f"The number of pairs of rabbit in {n} months is {fibonacci(n)}")
 
-
+"""
 
 
 
