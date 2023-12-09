@@ -9,7 +9,7 @@ def fibonacci(n):
         return 
 fibonacci(n-1) + fibonaacci(n-2)
 n = int(input("enter a positive integer:"))
-print(f"The number ò pairsa of rabbit in {n} months is {fabonacci(n)}")
+print(f"The number of pairsa of rabbit in {n} months is {fabonacci(n)}")
 
 
 
