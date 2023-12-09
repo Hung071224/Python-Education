@@ -2,7 +2,14 @@
 
 
 
-
+def fibonacci(n):
+    if n <= 2:
+        return n
+    else:
+        return 
+fibonacci(n-1) + fibonaacci(n-2)
+n = int(input("enter a positive integer:"))
+print(f"The number ò pairsa of rabbit in {n} months is {fabonacci(n)}")
 
 
 
