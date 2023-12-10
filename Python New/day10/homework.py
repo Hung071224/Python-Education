@@ -31,6 +31,23 @@ print("Dạng rút gọn của phân số là: {}/{}".format(a, b))
 
 
 
+def tong_uoc(n):
+  tong = 0
+  for i in range(1, n + 1):
+    if n % i == 0:
+      tong = tong + i
+  return tong
+
+x = int(input("Nhập x: "))
+y = int(input("Nhập y: "))
+
+tong_x = tong_uoc(x)
+tong_y = tong_uoc(y)
+tong_xy = tong_x + tong_y
+
+print("Tổng các ước của x là: {}".format(tong_x))
+print("Tổng các ước của y là: {}".format(tong_y))
+print("Tổng các ước của x và y là: {}".format(tong_xy))
 
 
 
