@@ -17,6 +17,8 @@ print(f"The number of pairs of rabbit in {n} months is {fibonacci(n)}")
 
 #cách 1: need help 
 
+
+
 a = int(input("Nhập tử số: "))
 b = int(input("Nhập mẫu số: "))
 u = math.gcd(a, b)
@@ -46,7 +48,7 @@ while u !=0 or v !=0:
         break
     if q % r !=0:
         print("Phân số rút gọn là: ", q, "/", r)
-        if u >v:
+        if u > v:
             u -= q*r
         else:
             v-= q*r
