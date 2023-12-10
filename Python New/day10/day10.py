@@ -17,7 +17,7 @@ print(f"The number of pairs of rabbit in {n} months is {fibonacci(n)}")
 
 #cách 1: need help 
 
-
+"""
 
 a = int(input("Nhập tử số: "))
 b = int(input("Nhập mẫu số: "))
@@ -27,7 +27,7 @@ q = b // u
 print ("phân số rút gọn là: ", p, "/", q)
 
 
-
+"""
 
 
 
