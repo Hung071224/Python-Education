@@ -2,7 +2,7 @@
 
 
 
-fh = open("test.txt")
+fh = open("C:\\Users\\PC\\Python Education\\Python New\\day11\\test.txt" , "r")
 print (fh)
 
 
