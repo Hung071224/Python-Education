@@ -1,3 +1,4 @@
+"""
 
 #Bài 1
 
@@ -59,8 +60,9 @@ min_hang = min(hang_hoa, key=hang_hoa.get)
 print("Mặt hàng có giá bán lớn nhất là: ", max_hang, ":", hang_hoa[max_hang])
 print("Mặt hàng có giá bán bé nhất là: ", min_hang, ":", hang_hoa[min_hang])
 
+"""
 
-
+#Bài 5
 
 
 
