@@ -25,7 +25,7 @@ for name, medals in athletes.items():
             point += 1
     points[name] = point
 
-sorted_list = sorted(points.item(), key=lambda x: x[1], reverse= True)
+sorted_list = sorted(points.items(), key=lambda x: x[1], reverse= True)
 max_gold = 0
 gold_list = []
 
