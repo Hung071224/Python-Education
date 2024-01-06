@@ -40,7 +40,7 @@ for name, medals in athletes.items():
 oanh_list = []
 
 for name in athletes.keys():
-    if name.split()[-1] == "oanh":
+    if name.split()[-1] == "Oanh":
         oanh_list.append(name)
 gold_athletes = []
 for name, medals in athletes.items():
