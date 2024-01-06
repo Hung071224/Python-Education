@@ -1,5 +1,4 @@
 
-"""
 #Bài 1
 
 n = int(input("Nhập số n: "))
@@ -23,7 +22,7 @@ else:
         for i in range(10):
             if i == 3 or i ==7:
                 continue
-            if not (bien_so[i].ídigit() or bien_so[i].isalpha()):
+            if not (bien_so[i].isdigit() or bien_so[i].isalpha()):
                 hop_le = False
                 break
 if hop_le:
@@ -45,7 +44,7 @@ for x in a:
         dem += 1
 print(f"Có {dem} số chính phương trong dãy số")
 
-"""
+
 
 #Bài 4
 n = int(input("Nhập n: "))
