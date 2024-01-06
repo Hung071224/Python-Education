@@ -34,12 +34,14 @@ for name, medals in athletes.items():
     if gold > max_gold:
         max_gold = gold
         gold_list = [name]
-    elif gold == max_gold:gold_list.append(name)
+    elif gold == max_gold:
+        gold_list.append(name)
     
 oanh_list = []
 
 for name in athletes.keys():
-    if name.split()[-1] == "oanh":oanh_list.append(name)
+    if name.split()[-1] == "oanh":
+        oanh_list.append(name)
 gold_athletes = []
 for name, medals in athletes.items():
     if "G" in medals: gold_athletes.append(name)
@@ -50,6 +52,7 @@ for i in range(3):
     f.write(f"{name}{medals}\n")
     
 f.write(f"{len(oanh_list)}\n")
+
 f.close()
 
 
