@@ -57,11 +57,11 @@ class Person:
         self.que_quan = que_quan
         
     def nhap(self):
-        self.cmt = input("Nhập CMT/CCCD: ")
+        self.cmt = int(input("Nhập CMT/CCCD: "))
         self.ho_ten = input("Nhập họ và tên: ")
-        self.nam_sinh =input("Nhập năm sinh: ")
+        self.nam_sinh =int(input("Nhập năm sinh: "))
         self.gioi_tinh = input("Nhập giới tính: ")
-        self.que_quan = input("Nhập quên quan: ")
+        self.que_quan = input("Nhập quên quán: ")
     
     def hien_thi(self):
         print("CMT/CCCD: ", self.cmt)
