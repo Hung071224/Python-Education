@@ -22,11 +22,12 @@ class Dragonball():
     def reset(self):
         self.level = 1
         self.power = 10
+        self.hair = "black"
         print(f"{self.name} đã trở lại level ban đầu và có power là {self.power}")
         
-    def super_saiyan(self, number, hairs_color):
-        self.level += (10 * number)
-        self.hair = hairs_color
+    def super_saiyan(self, number, hair_color):
+        self.level += (number * 10)
+        self.hair = hair_color
         self.power *= number
         print(f"{self.name} đã biến thành super saiyan {number} với màu tóc  là {self.hair} và có level là {self.level}")
     
@@ -36,13 +37,12 @@ class Dragonball():
         print(f"Hair: {self.hair} ")
         print(f"Powers: {self.power} ")
                       
-goku = Dragonball("Goku", 1, "black", 10)        
-vegeta = Dragonball("vegeta", 2, "black", 20)  
-gohan = Dragonball("gohan", 3, "black", 30)
-
-goku.level_up()
-vegeta.super_saiyan(2, "yellow")
-gohan.show()
+chap1 = Dragonball("Goku", 1, "black", 1000)
+chap1.show()
+chap1.level_up()
+chap1.show()
+chap1.super_saiyan("yellow")
+chap1.show()
 
 
 
