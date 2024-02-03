@@ -35,9 +35,9 @@ class Dragonball():
         print(f"Hair: {self.hair} ")
         print(f"Powers: {self.power} ")
                       
-        
-        
-
+goku = Dragonball("Goku", 1, "black", 10)        
+vegeta = Dragonball("vegeta", 2, "black", 20)  
+gohan = Dragonball("gohan", 3, "black", 30)
 
 
 
