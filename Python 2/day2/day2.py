@@ -7,7 +7,7 @@
 
 
 
-class Dragonball():
+class DragonBall:
     def __init__(self, name, level, hair, power):
         self.name = name
         self.level = level
@@ -37,7 +37,7 @@ class Dragonball():
         print(f"Hair: {self.hair} ")
         print(f"Powers: {self.power} ")
                       
-chap1 = Dragonball("Goku", 1, "black", 1000)
+chap1 = DragonBall("Goku", 1, "black", 1000)
 chap1.show()
 chap1.level_up()
 chap1.show()
