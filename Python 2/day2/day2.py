@@ -25,8 +25,9 @@ class Dragonball():
         print(f"{self.name} đã trở lại level ban đầu và có power là {self.power}")
         
     def super_saiyan(self, number, hairs_color):
-        self.level += 10 * number
+        self.level += (10 * number)
         self.hair = hairs_color
+        self.power *= number
         print(f"{self.name} đã biến thành super saiyan {number} với màu tóc  là {self.hair} và có level là {self.level}")
     
     def show(self):
@@ -39,7 +40,9 @@ goku = Dragonball("Goku", 1, "black", 10)
 vegeta = Dragonball("vegeta", 2, "black", 20)  
 gohan = Dragonball("gohan", 3, "black", 30)
 
-
+goku.level_up()
+vegeta.super_saiyan(2, "yellow")
+gohan.show()
 
 
 
