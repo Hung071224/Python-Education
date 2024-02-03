@@ -26,7 +26,7 @@ obj = counter(0)
 
 
 
-
+"""
 #BAI 2  
 
 class clock:
@@ -51,10 +51,10 @@ class clock:
     def display(self):
         print(f"{self.hours :02d}:{self.minutes:02d}:{self.seconds:02d}:")
 
+"""
 
 
-
-
+#bai 1
 
 
 
