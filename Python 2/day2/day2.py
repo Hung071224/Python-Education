@@ -103,7 +103,7 @@ for i in range(3):
     print("Dữ liệu của sinh viên thứ:", i + 1)
 
 danh_sach[i].hien_thi()
-danh_sach.sort(key=lambda sv: sv.tinh_dtb(), reverse=True)
+danh_sach.sort(key = lambda sv: sv.tinh_dtb(), reverse = True)
 
 print("Thứ tự xếp hạng theo điểm trung bình: ")
 for i in  range (3):
